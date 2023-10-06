@@ -96,8 +96,6 @@ export const UserForm: FC = () => {
     (field) => field === '' || field === undefined
   );
 
-  console.log(errors);
-
   useEffect(() => {
     async function getPositions() {
       try {
