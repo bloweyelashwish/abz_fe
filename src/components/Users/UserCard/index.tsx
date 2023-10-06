@@ -4,7 +4,7 @@ import { Image } from '~/components/ui/Image';
 import { Tooltip } from '~/components/ui/Tooltip';
 
 interface UserCardProps {
-  id: string;
+  id: number;
   name: string;
   email: string;
   phone: string;
