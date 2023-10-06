@@ -1,0 +1,52 @@
+.userForm {
+    @include breakpoint(md) {
+        max-width: 23.75rem;
+        margin-inline: auto;
+    }
+
+    .fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    .formFields {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.12rem;
+    }
+
+    .errorMessage {
+        margin-block: 1.25rem;
+    }
+
+    .action {
+        display: flex;
+        justify-content: center;
+        margin-top: 3.12rem;
+    }
+}
+
+
+.successBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3.12rem;
+    text-align: center;
+
+    h3 {
+        color: rgba(0, 0, 0, 0.87);
+    }
+}
+
+.loadingBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 3rem;
+    padding: 2rem 3rem;
+}

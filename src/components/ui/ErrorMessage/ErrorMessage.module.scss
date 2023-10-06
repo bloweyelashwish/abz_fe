@@ -1,0 +1,10 @@
+.errorMessage {
+    padding: 1rem;
+    background-color: rgb(237, 202, 199);
+    border-radius: 0.5rem;
+
+    .text {
+        text-align: center;
+        color: var(--color-error);
+    }
+}

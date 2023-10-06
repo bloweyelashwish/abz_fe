@@ -1,0 +1,65 @@
+.formBaseField {
+    position: relative;
+
+    .inner {
+        position: relative;
+    }
+
+    .input {
+        border-radius: 0.25rem;
+        border: 1px solid var(--color-grey-light);
+        background-color: transparent;
+        padding: 0.88rem 1rem;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.87);
+        outline: none;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            & + .label {
+                top: 0;
+                font-size: 0.75rem;
+                line-height: 0.875rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .label {
+        @include transition;
+
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+        color: var(--color-grey-dark);
+        background-color: var(--body-color);
+        pointer-events: none;
+        padding: 0.2rem;
+    }
+    
+    .errorMessage {
+        color: var(--color-error);
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.875rem;
+        left: 1rem;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+    }
+
+    &.error {
+        .input {
+            border-color: var(--color-error);
+            border-width: 2px;
+        }
+
+        .label {
+            color: var(--color-error);
+        }
+    }
+}

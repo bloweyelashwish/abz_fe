@@ -1,0 +1,11 @@
+.formFieldGroup {
+    .title {
+        margin-bottom: 0.69rem;
+    }
+
+    .group {
+        > * + * {
+            margin-top: 0.44rem;
+        }
+    }
+}

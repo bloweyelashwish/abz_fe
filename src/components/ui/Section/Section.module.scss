@@ -1,0 +1,10 @@
+.section {
+    @extend %container;
+
+    margin-top: 8.75rem;
+
+    .title {
+        margin-bottom: 3.12rem;
+        text-align: center;
+    }
+}

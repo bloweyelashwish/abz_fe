@@ -1,0 +1,10 @@
+@mixin transition($prop: all, $duration: 200ms, $easing: ease-in-out, $delay: 0ms) {
+    transition: $prop $duration $easing $delay;
+}
+
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints, $size)) {
+        @content;
+    }
+}

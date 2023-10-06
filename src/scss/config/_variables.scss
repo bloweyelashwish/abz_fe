@@ -1,0 +1,26 @@
+$max-width-md: 56.5rem;
+$max-width-xl: 73rem;
+
+$breakpoints: (
+    xs: em(400),
+    sm: em(600),
+    md: em(768),
+    lg: em(992),
+    xl: em(1280),
+    xxl: em(1536),
+    xxxl: em(1920),
+);
+
+%container {
+    padding-inline: 1rem;
+    margin-inline: auto;
+
+    @include breakpoint(md) {
+        padding-inline: 2rem;
+        max-width: $max-width-md;
+    }
+
+    @include breakpoint(xl) {
+        max-width: $max-width-xl;
+    }
+}

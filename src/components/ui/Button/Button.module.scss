@@ -1,0 +1,28 @@
+.button {
+    --button-bg: var(--color-primary);
+    --button-text-color: var(--color-black);
+
+    @include transition;
+
+    outline: none;
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    border-radius: 5rem;
+    padding: 0.25rem 1.7rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background-color: #FFE302;
+    }
+
+    &[disabled] {
+        --button-bg: #B4B4B4;
+        --button-text-color: var(--color-white);
+        
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+}

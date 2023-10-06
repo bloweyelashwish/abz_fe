@@ -1,0 +1,22 @@
+:root {
+    --font: 'Nunito', sans-serif;
+
+    --color-primary: #F4E041;
+    --color-secondary: #00BDD3;
+    --color-background: #F8F8F8;
+
+    --color-black: #000000DE;
+    --color-white: #FFFFFF;
+    --color-grey: #F8F8F8;
+    --color-grey-light: #D0CFCF;
+    --color-grey-dark: #7E7E7E;
+    --color-error: #CB3D40;
+
+    --body-text-color: var(--color-black);
+    --body-color: var(--color-background);
+    --body-font-base: 16px;
+    --body-font-family: var(--font);
+    --body-font-size: 1rem;
+    --body-font-weight: 400;
+    --body-line-height: 1.625;
+}

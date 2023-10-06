@@ -1,0 +1,31 @@
+.userListWrapper {
+    .userList {
+        display: grid;
+        grid-template-columns: minmax(1rem, 1fr);
+        list-style: none;
+        row-gap: 1.25rem;
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint(md) {
+            grid-template-columns: repeat(2, minmax(1rem, 1fr));
+            grid-auto-flow: row dense;
+            gap: 1rem;
+        }
+
+        @include breakpoint(lg) {
+            grid-template-columns: repeat(3, minmax(1rem, 1fr));
+            gap: 1.81rem;
+        }
+    }
+
+    .action {
+        margin-top: 3.12rem;
+        text-align: center;
+    }
+
+    .errorWrapper {
+        margin-block: 1rem;
+    }
+}
+
