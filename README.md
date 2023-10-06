@@ -1,3 +1,1 @@
-# Link to deployed website
-
-## https://test-task-fe-abz.netlify.app/
+# Link to deployed [project](https://test-task-fe-abz.netlify.app).
